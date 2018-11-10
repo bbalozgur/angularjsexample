@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="App" ng-controller="AppController">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title ng-bind="'AngularJS - ' + title">AngularJS</title>
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.css" rel="stylesheet" type="text/css">
+	<script src="assets/js/vendors/jquery.js"></script>
+	<script src="assets/js/vendors/bootstrap.bundle.js"></script>
+	<script src="assets/js/vendors/angular.js"></script>
+	<script src="assets/js/vendors/angular.router.js"></script>
+	<script src="assets/js/vendors/angular.resource.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/app/routers.js"></script>
+	<script src="assets/js/app/services.js"></script>
+	<script src="assets/js/app/controllers.js"></script>
+</head>
+<body>
+
+	<!-- Header -->
+	<div ng-include src="'assets/js/app/views/header.html'"></div>
+	<!-- /Header -->
+
+	<!-- Content -->
+	<div class="content">
+
+		<!-- Dashboard Content -->
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<ng-view></ng-view>
+				</div>
+			</div>
+		</div>
+		<!-- /Dashboard Content -->
+
+	</div>
+	<!-- /Content -->
+
+	<!-- Footer -->
+	<div ng-include src="'assets/js/app/views/footer.html'"></div>
+	<!-- /Footer -->
+
+</body>
+</html>

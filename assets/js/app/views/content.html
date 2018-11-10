@@ -1,0 +1,12 @@
+<div class="items" ng-if="items.length > 0">
+    <div class="search">
+        <input type='text' ng-model='searchText' class="form-control" placeholder="Arama..." />
+    </div>
+    <div class="list">
+        <ul>
+            <li ng-repeat="item in items | filter:searchText">
+                {{ item.name }}
+            </li>
+        </ul>
+    </div>
+</div>
